@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./App.css";
+import "./styles/App.css";
 
 function App() {
   // const [data, setData] = useState([]);
@@ -16,21 +16,21 @@ function App() {
 
   // console.log(data);
 
-  const img = document.querySelector("img");
-  fetch(
-    "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?api_key=0InkMC1nDfn2Bt7aZm0ZNKH7rjoAUiMSg7YKwh1q",
-    { mode: "cors" }
-  )
-    .then((response) => {
-      return response.json();
-    })
-    .then((response) => {
-      img.src = response.latest_photos[1].img_src;
-      console.log(response);
-    })
-    .catch((err) => {
-      console.log(err);
-    });
+  // const img = document.querySelector("img");
+  // fetch(
+  //   "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?api_key=0InkMC1nDfn2Bt7aZm0ZNKH7rjoAUiMSg7YKwh1q",
+  //   { mode: "cors" }
+  // )
+  //   .then((response) => {
+  //     return response.json();
+  //   })
+  //   .then((response) => {
+  //     img.src = response.latest_photos[1].img_src;
+  //     console.log(response);
+  //   })
+  //   .catch((err) => {
+  //     console.log(err);
+  //   });
 
   return (
     <div>
