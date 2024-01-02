@@ -1,4 +1,11 @@
 img {
-    width: 500px;
+    width: 300px;
     height: auto;
+}
+
+.image-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
 }

@@ -5,15 +5,10 @@ function ImageGrid({ data }) {
     return <p>Loading...</p>;
   }
 
-  const arr = [];
-  for (let i = 0; i < 10; i++) {
-    arr.push(Math.floor(Math.random() * data.length));
-  }
-
   return (
     <div className="image-grid">
-      {arr.map((i) => {
-        return <Image photo={data[i]} />;
+      {data.map((photo) => {
+        return <Image photo={photo} />;
       })}
     </div>
   );

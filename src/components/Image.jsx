@@ -2,11 +2,8 @@ function Image({ photo }) {
   if (photo === undefined) {
     return <p>Server Error</p>;
   }
-  //   if (photo.length === 0) {
-  //     return <p>Loading...</p>;
-  //   }
-  //   console.log(data);
-  //   const photo = data[335];
+
+  console.log(photo);
 
   return (
     <div className="image">
@@ -15,6 +12,7 @@ function Image({ photo }) {
       <p>Camera: {photo.camera.full_name}</p>
       <p>Sol: {photo.sol}</p>
       <p>Earth date: {photo.earth_date}</p>
+      <p>Photo ID: {photo.id}</p>
     </div>
   );
 }
