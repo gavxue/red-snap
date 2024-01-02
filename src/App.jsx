@@ -3,6 +3,7 @@ import "./styles/App.css";
 import Header from "./components/Header";
 import ImageGrid from "./components/ImageGrid";
 import SearchBox from "./components/SearchBox";
+import SelectionBox from "./components/SelectionBox";
 
 function App() {
   const [data, setData] = useState([]);
@@ -42,6 +43,7 @@ function App() {
   return (
     <div>
       <Header />
+      <SelectionBox />
       <SearchBox sol={sol} onClick={handleClick} onChange={handleChange} />
       <ImageGrid data={data} />
     </div>
