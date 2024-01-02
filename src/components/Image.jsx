@@ -3,8 +3,6 @@ function Image({ photo }) {
     return <p>Server Error</p>;
   }
 
-  console.log(photo);
-
   return (
     <div className="image">
       <img src={photo.img_src} alt="" />
