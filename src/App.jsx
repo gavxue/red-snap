@@ -1,20 +1,25 @@
 import { useEffect, useState } from "react";
 import "./styles/App.css";
+import Header from "./components/Header";
+import Image from "./components/Image";
 
 function App() {
-  // const [data, setData] = useState([]);
-  // const url =
-  //   "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?api_key=DEMO_KEY";
-  // const fetchInfo = () => {
-  //   return fetch(url)
-  //     .then((response) => response.json())
-  //     .then((data) => console.log(data));
-  // };
-  // useEffect(() => {
-  //   fetchInfo();
-  // }, []);
+  const [data, setData] = useState([]);
+  const url =
+    "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?api_key=0InkMC1nDfn2Bt7aZm0ZNKH7rjoAUiMSg7YKwh1q";
 
-  // console.log(data);
+  useEffect(() => {
+    fetch(url)
+      .then((response) => {
+        return response.json();
+      })
+      .then((photos) => {
+        setData(photos.latest_photos);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
   // const img = document.querySelector("img");
   // fetch(
@@ -34,7 +39,8 @@ function App() {
 
   return (
     <div>
-      <img src="" alt="rover image" />
+      <Header />
+      <Image data={data} />
     </div>
   );
 }
