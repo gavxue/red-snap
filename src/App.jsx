@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./styles/App.css";
 import Header from "./components/Header";
-import Image from "./components/Image";
+import ImageGrid from "./components/ImageGrid";
 
 function App() {
   const [data, setData] = useState([]);
@@ -24,7 +24,7 @@ function App() {
   return (
     <div>
       <Header />
-      <Image data={data} />
+      <ImageGrid data={data} />
     </div>
   );
 }

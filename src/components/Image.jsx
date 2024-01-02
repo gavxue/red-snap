@@ -1,15 +1,15 @@
-function Image({ data }) {
-  if (data === undefined) {
+function Image({ photo }) {
+  if (photo === undefined) {
     return <p>Server Error</p>;
   }
-  if (data.length === 0) {
-    return <p>Loading...</p>;
-  }
-  console.log(data);
-  const photo = data[335];
+  //   if (photo.length === 0) {
+  //     return <p>Loading...</p>;
+  //   }
+  //   console.log(data);
+  //   const photo = data[335];
 
   return (
-    <div>
+    <div className="image">
       <img src={photo.img_src} alt="" />
       <p>Rover: {photo.rover.name}</p>
       <p>Camera: {photo.camera.full_name}</p>
