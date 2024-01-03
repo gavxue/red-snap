@@ -51,18 +51,7 @@ function App() {
     console.log(sol);
   };
 
-  // const getData = async () => {
-  //   try {
-  //     const response = await fetch(
-  //       `https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/photos?api_key=0InkMC1nDfn2Bt7aZm0ZNKH7rjoAUiMSg7YKwh1q&sol=${sol}`
-  //     );
-  //     const newData = await response.json();
-  //     setData(newData.photos);
-  //   } catch (err) {
-  //     console.log(err.message);
-  //   }
-  // };
-
+  // update data
   useEffect(() => {
     const getData = async () => {
       try {
