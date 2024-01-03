@@ -9,6 +9,11 @@ function ImageGrid({ data }) {
     return <p>Loading...</p>;
   }
 
+  const arr = [];
+  for (let i = 0; i < 20; i++) {
+    arr.push(Math.floor(Math.random() * data.length));
+  }
+
   return (
     <div className="image-grid">
       <div className="details">
@@ -17,8 +22,8 @@ function ImageGrid({ data }) {
         <p>Earth date: {data[0].earth_date}</p>
       </div>
       <div className="images">
-        {data.map((photo) => {
-          return <Image photo={photo} />;
+        {arr.map((i) => {
+          return <Image photo={data[i]} />;
         })}
       </div>
     </div>
