@@ -23,18 +23,10 @@ function App() {
     console.log("initial");
   }, []);
 
-  // sol change
-  // const handleChange = (e) => {
-  //   setSol(e.target.value);
-  //   const imageGrid = document.getElementsByClassName("image-grid");
-  //   if (imageGrid) {
-  //     imageGrid.style.display = "none";
-  //   }
-  // };
-
   // rover change
   const handleClickRover = (e) => {
     setRover(e.target.id);
+    console.log(rover);
     // const btnPerseverance = document.getElementById("perseverance");
     // const btnCuriosity = document.getElementById("curiosity");
     // const btnOpportunity = document.getElementById("opportunity");
@@ -54,21 +46,37 @@ function App() {
   };
 
   // submit
-  const handleClick = async () => {
-    await setSol(document.getElementById("sol").value);
+  const handleClick = (e) => {
+    setSol(document.getElementById("sol").value);
     console.log(sol);
-    try {
-      const response = await fetch(
-        `https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/photos?api_key=0InkMC1nDfn2Bt7aZm0ZNKH7rjoAUiMSg7YKwh1q&sol=${sol}`
-      );
-      const newData = await response.json();
-      setData(newData.photos);
-    } catch (err) {
-      console.log(err.message);
-    }
-    // const imageGrid = document.querySelector(".image-grid");
-    // imageGrid.style.display = "block";
   };
+
+  // const getData = async () => {
+  //   try {
+  //     const response = await fetch(
+  //       `https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/photos?api_key=0InkMC1nDfn2Bt7aZm0ZNKH7rjoAUiMSg7YKwh1q&sol=${sol}`
+  //     );
+  //     const newData = await response.json();
+  //     setData(newData.photos);
+  //   } catch (err) {
+  //     console.log(err.message);
+  //   }
+  // };
+
+  useEffect(() => {
+    const getData = async () => {
+      try {
+        const response = await fetch(
+          `https://api.nasa.gov/mars-photos/api/v1/rovers/${rover}/photos?api_key=0InkMC1nDfn2Bt7aZm0ZNKH7rjoAUiMSg7YKwh1q&sol=${sol}`
+        );
+        const newData = await response.json();
+        setData(newData.photos);
+      } catch (err) {
+        console.log(err.message);
+      }
+    };
+    getData();
+  }, [sol, rover]);
 
   return (
     <div>
