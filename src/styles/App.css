@@ -3,9 +3,16 @@ img {
     height: auto;
 }
 
-.image-grid {
+.images {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+.selection-box button {
+    background-color: white;
+}
+.highlight {
+    background-color: gray;
 }

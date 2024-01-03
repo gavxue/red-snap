@@ -10,18 +10,18 @@ function ImageGrid({ data }) {
   }
 
   return (
-    <>
+    <div className="image-grid">
       <div className="details">
         <p>Rover: {data[0].rover.name}</p>
         <p>Sol: {data[0].sol}</p>
         <p>Earth date: {data[0].earth_date}</p>
       </div>
-      <div className="image-grid">
+      <div className="images">
         {data.map((photo) => {
           return <Image photo={photo} />;
         })}
       </div>
-    </>
+    </div>
   );
 }
 

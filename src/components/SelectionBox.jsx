@@ -1,9 +1,15 @@
-function SelectionBox() {
+function SelectionBox({ onClick }) {
   return (
     <div className="selection-box">
-      <button>Perseverance</button>
-      <button>Curiosity</button>
-      <button>Opportunity</button>
+      <button id="perseverance" onClick={onClick}>
+        Perseverance
+      </button>
+      <button id="curiosity" onClick={onClick}>
+        Curiosity
+      </button>
+      <button id="opportunity" onClick={onClick}>
+        Opportunity
+      </button>
     </div>
   );
 }
