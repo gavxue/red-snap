@@ -26,29 +26,11 @@ function App() {
   // rover change
   const handleClickRover = (e) => {
     setRover(e.target.id);
-    console.log(rover);
-    // const btnPerseverance = document.getElementById("perseverance");
-    // const btnCuriosity = document.getElementById("curiosity");
-    // const btnOpportunity = document.getElementById("opportunity");
-    // if (rover === "perseverance") {
-    //   btnPerseverance.classList.add("highlight");
-    //   btnCuriosity.classList.remove("highlight");
-    //   btnOpportunity.classList.remove("highlight");
-    // } else if (rover === "curiosity") {
-    //   btnPerseverance.classList.remove("highlight");
-    //   btnCuriosity.classList.add("highlight");
-    //   btnOpportunity.classList.remove("highlight");
-    // } else if (rover === "opportunity") {
-    //   btnPerseverance.classList.remove("highlight");
-    //   btnCuriosity.classList.remove("highlight");
-    //   btnOpportunity.classList.add("highlight");
-    // };
   };
 
   // submit
   const handleClick = (e) => {
     setSol(document.getElementById("sol").value);
-    console.log(sol);
   };
 
   // update data
@@ -70,7 +52,7 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <SelectionBox onClick={handleClickRover} />
+      <SelectionBox onClick={handleClickRover} rover={rover} />
       <SearchBox sol={sol} onClick={handleClick} />
       <ImageGrid data={data} />
     </div>
