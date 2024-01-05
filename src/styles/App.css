@@ -15,7 +15,7 @@
 .selection-box button {
     font-size: 20px;
     font-family: "Space Mono";
-    background-color: green;
+    background-color: white;
     border-radius: 20px;
     padding: 5px 20px;
     border-style: none;
@@ -67,23 +67,26 @@
     text-align: center;
 }
 
-img {
-    width: 300px;
-    height: auto;
-}
-
-
-
+/* images */
 .images {
     display: flex;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 30px;
 }
-
-.selection-box button {
-    background-color: white;
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    /* border: 3px solid black; */
 }
-.highlight {
-    background-color: gray;
+.image p {
+    margin: 0;
+}
+img {
+    width: 500px;
+    height: auto;
+    margin-bottom: 20px;
 }

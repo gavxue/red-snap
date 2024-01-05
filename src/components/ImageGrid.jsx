@@ -22,12 +22,10 @@ function ImageGrid({ data }) {
           <div>Launch date: {data[0].rover.launch_date}</div>
           <div>Landing date: {data[0].rover.landing_date}</div>
         </div>
-
         <div className="row-details">
           <div>Max sol: {data[0].rover.max_sol}</div>
           <div>Max date: {data[0].rover.max_date}</div>
         </div>
-
         <div className="row-details">
           <div>Sol: {data[0].sol}</div>
           <div>Earth date: {data[0].earth_date}</div>
