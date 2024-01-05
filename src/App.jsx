@@ -68,7 +68,7 @@ function App() {
   }, [sol, rover]);
 
   return (
-    <div>
+    <div className="app">
       <Header />
       <SelectionBox onClick={handleClickRover} />
       <SearchBox sol={sol} onClick={handleClick} />

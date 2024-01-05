@@ -1,7 +1,27 @@
+/* header */
+.header h1 {
+    text-align: center;
+}
+
+/* selection box */
+.selection-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: red;
+    width: fit-content;
+    padding: 10px 20px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+
 img {
     width: 300px;
     height: auto;
 }
+
+
 
 .images {
     display: flex;
