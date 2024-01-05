@@ -10,7 +10,7 @@ function ImageGrid({ data }) {
   }
 
   const arr = [];
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 21; i++) {
     arr.push(Math.floor(Math.random() * data.length));
   }
 
