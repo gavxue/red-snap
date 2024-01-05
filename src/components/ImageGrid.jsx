@@ -6,7 +6,7 @@ function ImageGrid({ data }) {
     return <p>Server Error</p>;
   }
   if (data.length === 0) {
-    return <p>Loading...</p>;
+    return <p>No images available on this sol</p>;
   }
 
   const arr = [];
