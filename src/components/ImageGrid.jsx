@@ -1,7 +1,6 @@
 import Image from "./Image";
 
 function ImageGrid({ data }) {
-  console.log(data);
   if (data === undefined) {
     return <p>Server Error</p>;
   }

@@ -20,7 +20,6 @@ function App() {
       setData(newData.latest_photos);
     };
     fetchData();
-    console.log("initial");
   }, []);
 
   // rover change

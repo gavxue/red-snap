@@ -5,12 +5,12 @@ function Header() {
       <p>View the latest and past photos taken from NASA's rovers on Mars</p>
       <div className="row-header">
         <a
-          class="button-github"
+          className="button-github"
           href="https://github.com/gavinxue050705/red-snap"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fa-brands fa-github" aria-hidden="true"></i> Gavin Xue
+          <i className="fa-brands fa-github" aria-hidden="true"></i> Gavin Xue
         </a>
       </div>
       <hr />
