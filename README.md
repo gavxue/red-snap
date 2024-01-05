@@ -6,6 +6,8 @@ Data taken from NASA Open API.
 
 Try it out:
 
+![website screenshot](/public/screenshot.png)
+
 ## Features 💡
 
 - Search by sol and rover
