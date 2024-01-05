@@ -1,8 +1,18 @@
-# React + Vite
+# Red Snap 📸
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+View the latest and past photos taken from NASA's rovers on Mars.
 
-Currently, two official plugins are available:
+Data taken from NASA Open API.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Try it out:
+
+## Features 💡
+
+- Search by sol and rover
+- Gives photo details (e.g. date, camera, etc)
+
+## Future Improvements 🛠️
+
+- Search by different queries
+- Efficient data fetching
+- Enlarge images
