@@ -5,7 +5,7 @@ function SelectionBox({ onClick, rover }) {
         id="perseverance"
         onClick={onClick}
         style={{
-          backgroundColor: rover === "perseverance" ? "#c84d06" : "#d46b08",
+          backgroundColor: rover === "perseverance" ? "#c84d06" : "",
         }}
       >
         Perseverance
@@ -14,7 +14,7 @@ function SelectionBox({ onClick, rover }) {
         id="curiosity"
         onClick={onClick}
         style={{
-          backgroundColor: rover === "curiosity" ? "#c84d06" : "#d46b08",
+          backgroundColor: rover === "curiosity" ? "#c84d06" : "",
         }}
       >
         Curiosity
@@ -23,7 +23,7 @@ function SelectionBox({ onClick, rover }) {
         id="opportunity"
         onClick={onClick}
         style={{
-          backgroundColor: rover === "opportunity" ? "#c84d06" : "#d46b08",
+          backgroundColor: rover === "opportunity" ? "#c84d06" : "",
         }}
       >
         Opportunity
