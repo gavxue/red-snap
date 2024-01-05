@@ -17,7 +17,7 @@ function ImageGrid({ data }) {
   return (
     <div className="image-grid">
       <div className="details">
-        <p className="rv">Rover: {data[0].rover.name}</p>
+        <p>Rover: {data[0].rover.name}</p>
         <div className="row-details">
           <div>Launch date: {data[0].rover.launch_date}</div>
           <div>Landing date: {data[0].rover.landing_date}</div>
