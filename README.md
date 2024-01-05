@@ -4,7 +4,7 @@ View the latest and past photos taken from NASA's rovers on Mars.
 
 Data taken from NASA Open API.
 
-Try it out: (https://redsnap.netlify.app/){:target="_blank"}
+Try it out: [https://redsnap.netlify.app/](https://redsnap.netlify.app/){:target="\_blank"}
 
 ![website screenshot](/public/screenshot.png)
 
