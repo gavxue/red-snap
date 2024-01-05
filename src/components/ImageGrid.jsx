@@ -17,13 +17,21 @@ function ImageGrid({ data }) {
   return (
     <div className="image-grid">
       <div className="details">
-        <p>Rover: {data[0].rover.name}</p>
-        <p>Launch date: {data[0].rover.launch_date}</p>
-        <p>Landing date: {data[0].rover.landing_date}</p>
-        <p>Max sol: {data[0].rover.max_sol}</p>
-        <p>Max date: {data[0].rover.max_date}</p>
-        <p>Sol: {data[0].sol}</p>
-        <p>Earth date: {data[0].earth_date}</p>
+        <p className="rv">Rover: {data[0].rover.name}</p>
+        <div className="row-details">
+          <div>Launch date: {data[0].rover.launch_date}</div>
+          <div>Landing date: {data[0].rover.landing_date}</div>
+        </div>
+
+        <div className="row-details">
+          <div>Max sol: {data[0].rover.max_sol}</div>
+          <div>Max date: {data[0].rover.max_date}</div>
+        </div>
+
+        <div className="row-details">
+          <div>Sol: {data[0].sol}</div>
+          <div>Earth date: {data[0].earth_date}</div>
+        </div>
       </div>
       <div className="images">
         {arr.map((i) => {
